@@ -1,0 +1,33 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(31, 111, 235, 0.22), transparent 28%),
+    radial-gradient(circle at right top, rgba(20, 184, 166, 0.18), transparent 25%),
+    linear-gradient(135deg, #f4f7fb 0%, #eef4ff 45%, #f7fbfa 100%);
+  color: #1e293b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(31, 111, 235, 0.22), transparent 28%),
+    radial-gradient(circle at right top, rgba(20, 184, 166, 0.18), transparent 25%),
+    linear-gradient(135deg, #f4f7fb 0%, #eef4ff 45%, #f7fbfa 100%);
+}
+
+body {
+  color: #1e293b;
+}
+
+#app {
+  height: 100vh;
+  overflow: hidden;
+}

@@ -1,0 +1,56 @@
+.app-shell {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.app-sidebar {
+  height: 100vh;
+  padding: 24px 18px;
+  background:
+    linear-gradient(180deg, #0f172a 0%, #102847 52%, #0f766e 100%);
+  color: #fff;
+  overflow-y: auto;
+  transition: width 0.22s ease, padding 0.22s ease;
+}
+
+.app-sidebar.is-collapsed {
+  padding: 24px 10px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 72px;
+  padding: 0 22px;
+  background:
+    linear-gradient(90deg, #0058a5 0%, #006fc8 42%, #0a8bdc 100%);
+  border-bottom: none;
+  box-shadow: 0 10px 28px rgba(0, 74, 140, 0.22);
+  position: relative;
+  z-index: 2;
+}
+
+.app-header::after {
+  display: none;
+}
+
+.app-main {
+  height: 100%;
+  padding: 16px 32px 32px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  background:
+    linear-gradient(180deg, rgba(244, 247, 251, 0.76) 0%, rgba(241, 245, 249, 0.92) 30%, rgba(240, 247, 245, 0.88) 100%);
+}

@@ -1,0 +1,5 @@
+
+> vue3-stress-test-demo@1.0.0 mock
+> node mock/server.js
+
+Mock stress server running at http://127.0.0.1:3001
