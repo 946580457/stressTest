@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "mock": "node mock/server.js",
-    "build": "vite build",
+    "build": "vite build && node scripts/generate-pages-404.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

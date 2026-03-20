@@ -20,6 +20,25 @@
     <link rel="modulepreload" crossorigin href="/stressTest/assets/ui-vendor-CLkRxQjg.js">
     <link rel="modulepreload" crossorigin href="/stressTest/assets/http-vendor-42ANG6Sg.js">
     <link rel="stylesheet" crossorigin href="/stressTest/assets/index-BqmS4waX.css">
+      <script>
+      (function () {
+        var pathSegmentsToKeep = 1;
+        var pathname = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        var basePath = pathname.split("/").slice(0, 1 + pathSegmentsToKeep).join("/");
+        var routePath = pathname.slice(basePath.length) || "/";
+        var query = search ? "&q=" + search.slice(1).replace(/&/g, "~and~") : "";
+
+        window.location.replace(
+          window.location.origin +
+            basePath +
+            "/?p=" +
+            encodeURIComponent(routePath + hash) +
+            query
+        );
+      })();
+    </script>
   </head>
   <body>
     <div id="app"></div>
